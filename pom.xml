@@ -12,4 +12,18 @@
 		<module>my-app2</module>
 	</modules>
 
+	<scm>
+		<connection>scm:git:ssh://github.com/yanoz/test_release.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:yanoz/test_release.git</developerConnection>
+		<url>https://github.com/yanoz/test_release</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+  		<repository>
+    		<id>internal.repo</id>
+    		<name>Temporary Staging Repository</name>
+    		<url>file://${project.build.directory}/mvn-repo</url>
+  		</repository>
+	</distributionManagement>
 </project>
